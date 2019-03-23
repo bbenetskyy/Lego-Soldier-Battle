@@ -6,3 +6,6 @@
 /BrickWars/BrickWars/obj
 /BrickWars/BrickWars.Android/obj
 /BrickWars/BrickWars.iOS/obj
+/BrickWars/BrickWars/bin/Debug/netstandard2.0
+/BrickWars/BrickWars.Android/bin/Debug
+/.vs/BrickWars/DesignTimeBuild
