@@ -9,3 +9,9 @@
 /BrickWars/BrickWars/bin/Debug/netstandard2.0
 /BrickWars/BrickWars.Android/bin/Debug
 /.vs/BrickWars/DesignTimeBuild
+/src/BrickWars.Core/bin/Debug/netstandard2.0
+/src/BrickWars.Core/obj
+/src/BrickWars.Droid/bin/Debug
+/src/BrickWars.Droid/obj
+/src/BrickWars.UI/bin/Debug/netstandard2.0
+/src/BrickWars.UI/obj
