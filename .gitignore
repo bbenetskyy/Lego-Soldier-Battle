@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/BrickWars/v16
+/BrickWars/BrickWars/obj
+/BrickWars/BrickWars.Android/obj
+/BrickWars/BrickWars.iOS/obj
