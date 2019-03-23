@@ -5,9 +5,7 @@ VisualStudioVersion = 16.0.28714.193
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickWars.Android", "BrickWars\BrickWars.Android\BrickWars.Android.csproj", "{80309B54-20CB-41FD-9762-B179A45A502D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickWars.iOS", "BrickWars\BrickWars.iOS\BrickWars.iOS.csproj", "{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickWars", "BrickWars\BrickWars\BrickWars.csproj", "{C499E5E1-493E-4A73-83E4-3906BDD9B404}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickWars", "BrickWars\BrickWars\BrickWars.csproj", "{C499E5E1-493E-4A73-83E4-3906BDD9B404}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,24 +35,6 @@ Global
 		{80309B54-20CB-41FD-9762-B179A45A502D}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{80309B54-20CB-41FD-9762-B179A45A502D}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{80309B54-20CB-41FD-9762-B179A45A502D}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Debug|iPhone.Build.0 = Debug|iPhone
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Debug|iPhone.Deploy.0 = Debug|iPhone
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Release|Any CPU.ActiveCfg = Release|iPhone
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Release|Any CPU.Build.0 = Release|iPhone
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Release|Any CPU.Deploy.0 = Release|iPhone
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Release|iPhone.ActiveCfg = Release|iPhone
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Release|iPhone.Build.0 = Release|iPhone
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Release|iPhone.Deploy.0 = Release|iPhone
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{FAA85827-B0DB-4C7E-9EEB-DE3EBEEA77E9}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
 		{C499E5E1-493E-4A73-83E4-3906BDD9B404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C499E5E1-493E-4A73-83E4-3906BDD9B404}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C499E5E1-493E-4A73-83E4-3906BDD9B404}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
