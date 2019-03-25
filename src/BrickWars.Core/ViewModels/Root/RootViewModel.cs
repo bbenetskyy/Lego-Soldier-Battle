@@ -16,7 +16,6 @@ namespace BrickWars.Core.ViewModels.Root
             _navigationService = navigationService;
         }
 
-
         public override async void ViewAppearing()
         {
             base.ViewAppearing();

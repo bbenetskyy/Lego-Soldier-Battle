@@ -16,3 +16,4 @@
 /src/BrickWars.UI/bin/Debug/netstandard2.0
 /src/BrickWars.UI/obj
 /.vs/BrickWars/v15/Server/sqlite3
+*.user
