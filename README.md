@@ -1,5 +1,8 @@
 # Lego-Soldier-Battle
 
+[![CodeFactor](https://www.codefactor.io/repository/github/bbenetskyy/lego-soldier-battle/badge)](https://www.codefactor.io/repository/github/bbenetskyy/lego-soldier-battle)
+
+
 Application Design located at [Figma](https://www.figma.com/file/Y8YWUxArxbW1yex2EsYrr4kZ/Lego-Soldier-Battle).
 
 Some Preview Pages:
