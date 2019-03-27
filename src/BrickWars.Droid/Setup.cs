@@ -11,5 +11,11 @@ namespace BrickWars.Droid
 {
     public class Setup : MvxFormsAndroidSetup<Core.App, UI.App>
     {
+        protected override void InitializeFirstChance()
+        {
+            base.InitializeFirstChance();
+
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
+        }
     }
 }
