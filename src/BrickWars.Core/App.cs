@@ -1,6 +1,7 @@
 using MvvmCross.IoC;
 using MvvmCross.ViewModels;
 using BrickWars.Core.ViewModels.Root;
+using Xamarin.Forms;
 
 namespace BrickWars.Core
 {

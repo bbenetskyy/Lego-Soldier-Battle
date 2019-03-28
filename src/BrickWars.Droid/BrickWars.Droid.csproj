@@ -131,6 +131,9 @@
     <PackageReference Include="Xamarin.Forms">
       <Version>3.6.0.264807</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.HotReload">
+      <Version>1.2.4</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />

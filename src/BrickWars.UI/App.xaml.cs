@@ -11,6 +11,10 @@ namespace BrickWars.UI
         public App()
         {
             InitializeComponent();
+
+#if DEBUG
+            HotReloader.Current.Start(this);
+#endif
         }
     }
 }
