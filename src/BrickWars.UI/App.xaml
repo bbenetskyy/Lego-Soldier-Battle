@@ -3,14 +3,16 @@
     x:Class="BrickWars.UI.App"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:d="clr-namespace:MvvmCross.Forms;assembly=MvvmCross.Forms"
     xmlns:converters="clr-namespace:BrickWars.Forms.Converters;assembly=BrickWars.Core"
     xmlns:resources="clr-namespace:BrickWars.UI.Resources">
+
     <Application.Resources>
-        <ResourceDictionary.MergedDictionaries>
-            <resources:Colors />
-        </ResourceDictionary.MergedDictionaries>
-        <!--<converters:WarriorsToImageConverter x:Key="WarriorsToImage"/>-->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <resources:Colors />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        <converters:WarriorsToImageConverter x:Key="WarriorsToImage"/>
         <!--<converters:WarriorsToOverViewConverter x:Key="WarriorsToOverView"/>-->
     </Application.Resources>
 </Application>
