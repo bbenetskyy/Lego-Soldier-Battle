@@ -8,35 +8,45 @@
     xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     x:Class="BrickWars.UI.Pages.HomePage"
     xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:enums="clr-namespace:BrickWars.Models.Enums;assembly=BrickWars.Core..NETStandard,Version=v2.0"
     xmlns:viewModels="clr-namespace:BrickWars.Core.ViewModels.Home;assembly=BrickWars.Core"
     Title="Main page">
-    <ContentPage.Content>
-        <ListView ItemsSource="{Binding ArmyList}" HasUnevenRows="True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Frame Margin="10">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="1*"/>
-                                    <ColumnDefinition Width="2*"/>
-                                </Grid.ColumnDefinitions>
-                                <StackLayout Grid.Column="0" Orientation="Vertical">
-                                    <forms:CachedImage Source="{Binding Image}">
-                                        <forms:CachedImage.Transformations>
-                                            <transformations:CircleTransformation />
-                                        </forms:CachedImage.Transformations>
-                                    </forms:CachedImage>
-                                    <Label Text="{Binding Points}"/>
-                                </StackLayout>
-                                <StackLayout Grid.Column="1" Orientation="Vertical">
-                                    <Grid>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="*"/>
-                                        </Grid.RowDefinitions>
-                                        <Label Grid.Row="0" Text="{Binding Name}"/>
-                                        <ListView Grid.Row="1" ItemsSource="{Binding Warriors}">
+        <!--<ListView ItemsSource="{Binding ArmyList}" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Frame Margin="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Grid.Column="0" Orientation="Vertical">
+                                <forms:CachedImage Source="{Binding Image}">
+                                    <forms:CachedImage.Transformations>
+                                        <transformations:CircleTransformation />
+                                    </forms:CachedImage.Transformations>
+                                </forms:CachedImage>
+                                <Label Text="{Binding Points}"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Orientation="Vertical">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Row="0" Text="{Binding Name}"/>
+                                    --><!--<StackLayout Orientation="Vertical">
+                                        <StackLayout Orientation="Horizontal">
+                                            --><!--<forms:CachedImage Source="{Binding Warriors, Converter={StaticResource WarriorsToImage}, 
+                                                    ConverterParameter={StaticResource Soldier}}">
+                                                <forms:CachedImage.Transformations>
+                                                    <transformations:CircleTransformation />
+                                                </forms:CachedImage.Transformations>
+                                            </forms:CachedImage>--><!--
+                                        </StackLayout>
+                                    </StackLayout>--><!--
+                                    <ListView Grid.Row="1" ItemsSource="{Binding Warriors}">
                                             <ListView.ItemTemplate>
                                                 <DataTemplate>
                                                     <ViewCell>
@@ -52,13 +62,12 @@
                                                 </DataTemplate>
                                             </ListView.ItemTemplate>
                                         </ListView>
-                                    </Grid>
-                                </StackLayout>
-                            </Grid>
-                        </Frame>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </ContentPage.Content>
+                                </Grid>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        </ListView>-->
 </views:MvxContentPage>
