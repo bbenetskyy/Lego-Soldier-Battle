@@ -13,4 +13,8 @@
     <PackageReference Include="Xamarin.HotReload" Version="1.2.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Enums\" />
+  </ItemGroup>
+
 </Project>

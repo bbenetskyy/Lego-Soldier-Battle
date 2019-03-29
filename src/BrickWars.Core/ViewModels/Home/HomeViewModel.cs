@@ -10,12 +10,12 @@ namespace BrickWars.Core.ViewModels.Home
 {
     public class HomeViewModel : BaseViewModel
     {
-        public MvxObservableCollection<ArmyModel> ArmyList { get; set; }
+        //public MvxObservableCollection<ArmyModel> Armies { get; set; }
 
-        public override async Task Initialize()
+        public override Task Initialize()
         {
-            await base.Initialize();
-            ArmyList = new MvxObservableCollection<ArmyModel>(FakeDataProvider.FakeArmyList);
+            //Armies = new MvxObservableCollection<ArmyModel>(FakeDataProvider.FakeArmyModels);
+            return base.Initialize();
         }
     }
 }
