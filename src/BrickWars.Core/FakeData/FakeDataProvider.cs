@@ -128,53 +128,60 @@ namespace BrickWars.Core.FakeData
                 }
             };
 
-            FakeArmyModels = new List<ArmyModel>
+            FakeArmyModels = new List<ArmyModel>();
+
+            var army = new ArmyModel
             {
-                new ArmyModel
-                {
-                    Id = Guid.NewGuid(),
-                    Image = "https://cdn.shopify.com/s/files/1/2652/5464/products/lego-army-headquarters-1086-pieces_580x.jpg",
-                    Points = 3250,
-                    Name = "Full Army",
-                    Warriors = new MvxObservableCollection<WarriorModel>(FakeWarriors)
-                },
-                new ArmyModel
-                {
-                    Id = Guid.NewGuid(),
-                    Image = "https://4.imimg.com/data4/VM/MA/MY-1132707/lego-army-toy-500x500.jpg",
-                    Points = 2500,
-                    Name = "Chaplain Corps",
-                    Warriors = new MvxObservableCollection<WarriorModel>(FakeWarriors
-                        .Where(w=>w.Type!= WarriorType.Tank))
-                },
-                new ArmyModel
-                {
-                    Id = Guid.NewGuid(),
-                    Image = "http://i.imgur.com/qEdYuFM.jpg",
-                    Points = 1500,
-                    Name = "Armor Branch",
-                    Warriors = new MvxObservableCollection<WarriorModel>(FakeWarriors
-                        .Where(w=>w.Type==WarriorType.Tank))
-                },
-                new ArmyModel
-                {
-                    Id = Guid.NewGuid(),
-                    Image = "https://ae01.alicdn.com/kf/HTB1en_RXsfrK1RkSnb4q6xHRFXa5/6-sztuk-si-y-zbrojne-Army-MILITARY-SWAT-Uszczelki-Kamufla-o-nierze-Marine-Corps-Cegie-ki.jpg_640x640.jpg",
-                    Points = 1250,
-                    Name = "Air Defense Artillery Branch",
-                    Warriors = new MvxObservableCollection<WarriorModel>(FakeWarriors
-                        .Take(2))
-                },
-                new ArmyModel
-                {
-                    Id = Guid.NewGuid(),
-                    Image = "https://static.artfire.com/uploads/mfs/items/b8/aa/large/b8aaa7d01950718363a684e461ca902cbebf41723fa1d3a79338cc92ab413843.jpg",
-                    Points = 2700,
-                    Name = "Chemical Corps",
-                    Warriors = new MvxObservableCollection<WarriorModel>(FakeWarriors
-                        .Take(4))
-                }
+                Id = Guid.NewGuid(),
+                Image = "https://cdn.shopify.com/s/files/1/2652/5464/products/lego-army-headquarters-1086-pieces_580x.jpg",
+                Points = 3250,
+                Name = "Full Army"
             };
+            army.Warriors.AddRange(FakeWarriors);
+            FakeArmyModels.Add(army);
+
+            army = new ArmyModel
+            {
+                Id = Guid.NewGuid(),
+                Image = "https://4.imimg.com/data4/VM/MA/MY-1132707/lego-army-toy-500x500.jpg",
+                Points = 2500,
+                Name = "Chaplain Corps"
+            };
+            army.Warriors.AddRange(FakeWarriors
+                        .Where(w => w.Type != WarriorType.Tank));
+            FakeArmyModels.Add(army);
+
+            army = new ArmyModel
+            {
+                Id = Guid.NewGuid(),
+                Image = "http://i.imgur.com/qEdYuFM.jpg",
+                Points = 1500,
+                Name = "Armor Branch"
+            };
+            army.Warriors.AddRange(FakeWarriors
+                        .Where(w => w.Type == WarriorType.Tank));
+            FakeArmyModels.Add(army);
+
+            army = new ArmyModel
+            {
+                Id = Guid.NewGuid(),
+                Image = "https://ae01.alicdn.com/kf/HTB1en_RXsfrK1RkSnb4q6xHRFXa5/6-sztuk-si-y-zbrojne-Army-MILITARY-SWAT-Uszczelki-Kamufla-o-nierze-Marine-Corps-Cegie-ki.jpg_640x640.jpg",
+                Points = 1250,
+                Name = "Air Defense Artillery Branch"
+            };
+            army.Warriors.AddRange(FakeWarriors.Take(2));
+            FakeArmyModels.Add(army);
+
+            army = new ArmyModel
+            {
+                Id = Guid.NewGuid(),
+                Image = "https://static.artfire.com/uploads/mfs/items/b8/aa/large/b8aaa7d01950718363a684e461ca902cbebf41723fa1d3a79338cc92ab413843.jpg",
+                Points = 2700,
+                Name = "Chemical Corps"
+
+            };
+            army.Warriors.AddRange(FakeWarriors.Take(4));
+            FakeArmyModels.Add(army);
         }
     }
 }
