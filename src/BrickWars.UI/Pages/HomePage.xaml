@@ -15,18 +15,18 @@
             <DataTemplate>
                 <ViewCell>
                     <Frame Margin="10">
-                        <Grid>
+                        <Grid> 
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="auto"/>
                                 <ColumnDefinition Width="2*"/>
                             </Grid.ColumnDefinitions>
                             <StackLayout Grid.Column="0" Orientation="Vertical">
-                                <forms:CachedImage Source="{Binding Image}">
+                                <forms:CachedImage Source="{Binding Image}" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center">
                                     <forms:CachedImage.Transformations>
                                         <transformations:CircleTransformation />
                                     </forms:CachedImage.Transformations>
                                 </forms:CachedImage>
-                                <Label Text="{Binding Points}"/>
+                                <Label Text="{Binding Points}" HorizontalOptions="Center"/>
                             </StackLayout>
                             <StackLayout Grid.Column="1" Orientation="Vertical">
                                 <Grid>
@@ -34,32 +34,34 @@
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="*"/>
                                     </Grid.RowDefinitions>
-                                    <Label Grid.Row="0" Text="{Binding Name}"/>
-                                    <StackLayout Orientation="Vertical">
+                                    <Label Grid.Row="0" Text="{Binding Name}" HorizontalOptions="Center" 
+                                           FontSize="Large" FontAttributes="Bold"/>
+                                    <StackLayout Orientation="Vertical" Grid.Row="1" HorizontalOptions="CenterAndExpand">
                                         <StackLayout Orientation="Horizontal">
-                                            <forms:CachedImage Source="{Binding }">
+                                            <forms:CachedImage Source="{Binding SoldiersSummary.Image}">
                                                 <forms:CachedImage.Transformations>
                                                     <transformations:CircleTransformation />
                                                 </forms:CachedImage.Transformations>
                                             </forms:CachedImage>
+                                            <Label Text="{Binding SoldiersSummary.Summary}"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <forms:CachedImage Source="{Binding VehicleSummary.Image}">
+                                                <forms:CachedImage.Transformations>
+                                                    <transformations:CircleTransformation />
+                                                </forms:CachedImage.Transformations>
+                                            </forms:CachedImage>
+                                            <Label Text="{Binding VehicleSummary.Summary}"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <forms:CachedImage Source="{Binding TanksSummary.Image}">
+                                                <forms:CachedImage.Transformations>
+                                                    <transformations:CircleTransformation />
+                                                </forms:CachedImage.Transformations>
+                                            </forms:CachedImage>
+                                            <Label Text="{Binding TanksSummary.Summary}"/>
                                         </StackLayout>
                                     </StackLayout>
-                                    <ListView Grid.Row="1" ItemsSource="{Binding Warriors}">
-                                            <ListView.ItemTemplate>
-                                                <DataTemplate>
-                                                    <ViewCell>
-                                                        <StackLayout Orientation="Horizontal">
-                                                            <forms:CachedImage Source="{Binding Image}">
-                                                                <forms:CachedImage.Transformations>
-                                                                    <transformations:CircleTransformation />
-                                                                </forms:CachedImage.Transformations>
-                                                            </forms:CachedImage>
-                                                            <Label/>
-                                                        </StackLayout>
-                                                    </ViewCell>
-                                                </DataTemplate>
-                                            </ListView.ItemTemplate>
-                                        </ListView>
                                 </Grid>
                             </StackLayout>
                         </Grid>
