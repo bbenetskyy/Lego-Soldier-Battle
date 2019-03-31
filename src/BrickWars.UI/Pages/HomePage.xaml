@@ -10,7 +10,8 @@
     x:Class="BrickWars.UI.Pages.HomePage"
     xmlns:viewModels="clr-namespace:BrickWars.Core.ViewModels.Home;assembly=BrickWars.Core"
     Title="Main page">
-    <ListView ItemsSource="{Binding ArmyList}" HasUnevenRows="True">
+    <ListView ItemsSource="{Binding ArmyList}" HasUnevenRows="True"
+              SelectedItem="{Binding SelectedArmy}">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
