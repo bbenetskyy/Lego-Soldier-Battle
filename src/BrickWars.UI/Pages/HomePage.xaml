@@ -5,14 +5,82 @@
     xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
     xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
     xmlns:local="clr-namespace:BrickWars.UI.Pages"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
     x:Class="BrickWars.UI.Pages.HomePage"
     xmlns:viewModels="clr-namespace:BrickWars.Core.ViewModels.Home;assembly=BrickWars.Core"
-                      Title="Main page">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome!!&#10;App scaffolded with MvxScaffolding"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    Title="Main page">
+    <ListView ItemsSource="{Binding ArmyList}" HasUnevenRows="True"
+              SelectedItem="{Binding SelectedArmy}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Frame Margin="10" BackgroundColor="#9A9FA3" CornerRadius="25">
+                        <Grid> 
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Grid.Column="0" Orientation="Vertical">
+                                <forms:CachedImage Source="{Binding Image}" 
+                                                   HeightRequest="75" WidthRequest="75"
+                                                   HorizontalOptions="Center">
+                                    <forms:CachedImage.Transformations>
+                                        <transformations:CircleTransformation />
+                                    </forms:CachedImage.Transformations>
+                                </forms:CachedImage>
+                                <Label Text="{Binding Points}" 
+                                       HorizontalOptions="Center"
+                                       TextColor="White"/>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Orientation="Vertical">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Row="0" Text="{Binding Name}" 
+                                           HorizontalOptions="Center" TextColor="White"
+                                           FontSize="Large" FontAttributes="Bold"/>
+                                    <StackLayout Orientation="Vertical" Grid.Row="1" 
+                                                 HorizontalOptions="CenterAndExpand">
+                                        <StackLayout Orientation="Horizontal" Spacing="15">
+                                            <forms:CachedImage Source="{Binding SoldiersSummary.Image}" 
+                                                               HeightRequest="20" WidthRequest="20">
+                                                <forms:CachedImage.Transformations>
+                                                    <transformations:CircleTransformation />
+                                                </forms:CachedImage.Transformations>
+                                            </forms:CachedImage>
+                                            <Label Text="{Binding SoldiersSummary.Summary}"
+                                                   TextColor="White"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" Spacing="15">
+                                            <forms:CachedImage Source="{Binding VehicleSummary.Image}" 
+                                                               HeightRequest="20" WidthRequest="20">
+                                                <forms:CachedImage.Transformations>
+                                                    <transformations:CircleTransformation />
+                                                </forms:CachedImage.Transformations>
+                                            </forms:CachedImage>
+                                            <Label Text="{Binding VehicleSummary.Summary}"
+                                                   TextColor="White"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" Spacing="15">
+                                            <forms:CachedImage Source="{Binding TanksSummary.Image}" 
+                                                               HeightRequest="20" WidthRequest="20">
+                                                <forms:CachedImage.Transformations>
+                                                    <transformations:CircleTransformation />
+                                                </forms:CachedImage.Transformations>
+                                            </forms:CachedImage>
+                                            <Label Text="{Binding TanksSummary.Summary}"
+                                                   TextColor="White"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        </ListView>
 </views:MvxContentPage>
