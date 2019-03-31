@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -178,7 +176,6 @@ namespace BrickWars.Core.FakeData
                 Image = "https://static.artfire.com/uploads/mfs/items/b8/aa/large/b8aaa7d01950718363a684e461ca902cbebf41723fa1d3a79338cc92ab413843.jpg",
                 Points = 2700,
                 Name = "Chemical Corps"
-
             };
             army.Warriors.AddRange(FakeWarriors.Take(4));
             FakeArmyModels.Add(army);
