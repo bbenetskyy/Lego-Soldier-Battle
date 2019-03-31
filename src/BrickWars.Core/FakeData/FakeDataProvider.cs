@@ -167,7 +167,7 @@ namespace BrickWars.Core.FakeData
                 Id = Guid.NewGuid(),
                 Image = "https://ae01.alicdn.com/kf/HTB1en_RXsfrK1RkSnb4q6xHRFXa5/6-sztuk-si-y-zbrojne-Army-MILITARY-SWAT-Uszczelki-Kamufla-o-nierze-Marine-Corps-Cegie-ki.jpg_640x640.jpg",
                 Points = 1250,
-                Name = "Air Defense Artillery Branch"
+                Name = "Air Defense Artillery"
             };
             army.Warriors.AddRange(FakeWarriors.Take(2));
             FakeArmyModels.Add(army);

@@ -33,13 +33,13 @@ namespace BrickWars.Core.Models
             switch (warriorType)
             {
                 case WarriorType.Soldier:
-                    Image = "https://image.flaticon.com/icons/svg/1406/1406926.svg";
+                    Image = "https://cdn2.iconfinder.com/data/icons/helmet/512/roman-warrior-soldier-helmet-hat-512.png";
                     break;
                 case WarriorType.Vehicle:
-                    Image = "https://image.flaticon.com/icons/svg/1406/1406945.svg";
+                    Image = "https://cdn.iconscout.com/icon/premium/png-256-thumb/army-truck-3-1049325.png";
                     break;
                 case WarriorType.Tank:
-                    Image = "https://image.flaticon.com/icons/svg/1406/1406942.svg";
+                    Image = "https://cdn.iconscout.com/icon/premium/png-256-thumb/tank-132-772283.png";
                     break;
             }
         }
